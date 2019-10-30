@@ -6,6 +6,14 @@
 
 **Loosely vs. Strictly Equal**
 
+* Loose equality: Compare two values for equality after converting both values to a common type. 
+* Strict equality: Comparing two values for equality, neither value is implicitly converted to some other value before being compared. 
+
+
+#### References
+
+* [Equality comparisons and sameness](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Equality_comparisons_and_sameness)
+
 ### Context vs. Scope
 
 **1. Context**
@@ -57,15 +65,40 @@ The asynchronous, single-threaded nature is not built into the JS language, but 
 * **Browser or Web API's** - these components are built into the web browser (or the computer environment) to provide extra functionality on top of JS (Note: the point of the API's is to abstract away the complexity involved and provide the extra capabilities)
 
 
-**2. Promises or Async-Await**
+**2. Promises vs. Async/Await**
+
+a promise is a returned object you attach callbacks to, instead of passing callbacks into a function
+-- promise constructor takes in one argument: a callback function with two parameters — resolve and reject.
+
+“async” before a function means one simple thing: a function always returns a promise. Other values are wrapped in a resolved promise automatically.
+
+The keyword await makes JavaScript wait until that promise settles and returns its result.
+
+
+<pre><code>async function f() {
+
+  let promise = new Promise((resolve, reject) => {
+    setTimeout(() => resolve("done!"), 1000)
+  });
+
+  let result = await promise; // wait till the promise resolves (*)
+
+  alert(result); // "done!"
+}
+
+f();
+</code></pre>
 
 
 
 #### References
+* [JavaScript: Promises explained with simple real life analogies](https://codeburst.io/javascript-promises-explained-with-simple-real-life-analogies-dd6908092138)
+* [Async/await](https://javascript.info/async-await)
 * [Concurrency model and the event loop](https://developer.mozilla.org/en-US/docs/Web/JavaScript/EventLoop)
 * [Event Loop Explained](https://medium.com/front-end-weekly/javascript-event-loop-explained-4cd26af121d4)
 * [Asynchronous JavaScript: From Callback Hell to Async and Await](https://blog.hellojs.org/asynchronous-javascript-from-callback-hell-to-async-and-await-9b9ceb63c8e8)
 * [Understanding JS: The Event Loop](https://hackernoon.com/understanding-js-the-event-loop-959beae3ac40)
+
 
 ---
 
