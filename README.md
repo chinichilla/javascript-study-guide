@@ -1,5 +1,4 @@
 # Javascript Study Guide
-
 - [The Basics](#the-basics)
   * [Loosely vs. Strictly Equal](#loosely-vs-strictly-equal)
 - [Context and Scope](#context-and-scope)
@@ -7,13 +6,28 @@
   * [Scope](#scope)
   * [`this` keyword and context](#this-keyword-and-context)
   * [Currying](#currying)
-  
+- [Event Loop](#event-loop)
+  * [Overview](#overview)
+  * [Promises vs. Async/Await](#promises-vs-asyncawait)
+- [Garbage Collection](#garbage-collection)
+- [`eventListeners`](#eventlisteners)
+- [The Different Engines](#the-different-engines)
+# NERD Study Guide
+- [React](#react)
+  * [Architecture](#architecture)
+  * [Virtual DOM](#virtual-dom)
+- [Redux](#redux)
+- [Express](#express)
+- [Node](#node)
+- [SQL](#sql)
 
+
+# Javascript Study Guide
 ## The Basics
 
 
 
-### Loosely vs. Strictly Equal**
+### Loosely vs. Strictly Equal
 
 * Loose equality: Compare two values for equality after converting both values to a common type. 
 * Strict equality: Comparing two values for equality, neither value is implicitly converted to some other value before being compared. 
@@ -67,7 +81,7 @@ Layman's Terms: access to an outer function’s scope from an inner function
 
 ### Event Loop
 
-**1. Overivew**
+#### Overview
 The asynchronous, single-threaded nature is not built into the JS language, but it's built on the core JS language inside the browser (or the programming environment) and accessed using the browser API's. 
 <p align="center">
 <img src="https://miro.medium.com/max/1504/1*7GXoHZiIUhlKuKGT22gHmA.png" alt="Image of Basic Architecture"  width="400"/>
@@ -78,7 +92,7 @@ The asynchronous, single-threaded nature is not built into the JS language, but 
 * **Browser or Web API's** - these components are built into the web browser (or the computer environment) to provide extra functionality on top of JS (Note: the point of the API's is to abstract away the complexity involved and provide the extra capabilities)
 
 
-**2. Promises vs. Async/Await**
+#### Promises vs. Async/Await
 
 a promise is a returned object you attach callbacks to, instead of passing callbacks into a function
 -- promise constructor takes in one argument: a callback function with two parameters — resolve and reject.
@@ -143,25 +157,30 @@ execute
 instantiate 
 
 ---
-## NERD Study Guide
+# NERD Study Guide
 
 Why does this thing exist? Which problems does it solve/create? 
 
-### React
+## React
 
-1. Architecture 
-
-2. Virtual DOM
+### Architecture 
+### Virtual DOM
 
 -- Shadow DOM on drawbacks
 
 #### References
-*[Virtual DOM and Internals](https://reactjs.org/docs/faq-internals.html)
+* [Virtual DOM and Internals](https://reactjs.org/docs/faq-internals.html)
 
-### Redux
+## Redux
 
-### Express
 
-### Node
 
-### SQL
+#### References
+* [Actions and Reducers](https://rangle.github.io/react-training/redux-action-reducer/)
+
+
+## Express
+
+## Node
+
+## SQL
