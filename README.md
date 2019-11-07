@@ -1,10 +1,19 @@
-## Javascript Study Guide
+# Javascript Study Guide
 
-### The Basics
+- [The Basics](#the-basics)
+  * [Loosely vs. Strictly Equal](#loosely-vs-strictly-equal)
+- [Context and Scope](#context-and-scope)
+  * [Context](#context)
+  * [Scope](#scope)
+  * [`this` keyword and context](#this-keyword-and-context)
+  * [Currying](#currying)
+  
+
+## The Basics
 
 
 
-**Loosely vs. Strictly Equal**
+### Loosely vs. Strictly Equal**
 
 * Loose equality: Compare two values for equality after converting both values to a common type. 
 * Strict equality: Comparing two values for equality, neither value is implicitly converted to some other value before being compared. 
@@ -14,9 +23,9 @@
 
 * [Equality comparisons and sameness](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Equality_comparisons_and_sameness)
 
-### Context vs. Scope
+### Context and Scope
 
-**1. Context**
+#### Context
 
 Scope - determines the accessibility of identifiers (e.g., variables) based off where it was created
 
@@ -24,11 +33,15 @@ Note: `window` is the global object in the browser
 
 TK
 
-**2. Scope**
+#### Scope
 
-**3. `this` keyword and context**
+TK
 
-**4. Closure**
+#### `this` keyword and context
+
+TK
+
+#### Closure
 
 **i. What is closure?**
 
@@ -38,7 +51,7 @@ Layman's Terms: access to an outer function’s scope from an inner function
 
 **ii. How is closure used?**
 
-**5. Currying**
+#### Currying
 
 
 #### References
