@@ -226,6 +226,19 @@ We want everything that takes a long time to occur in one central place. Having 
 ## SQL
 
 
+
+### Basic Commands
+
+### Differences between Postgres and MySQL
+
+### Useful Practice
+* [PostgreSQL Exercises](https://pgexercises.com/)
+* [PostgreSQL Tutorial](http://www.postgresqltutorial.com/)
+
+
+#### References
+* [PostgreSQL vs MySQL: What's the Difference?](https://www.guru99.com/postgresql-vs-mysql-difference.html)
+
 ## Sequelize (Object Relational Mapping)
 
 * [Why you should avoid ORMs (with examples in Node.js)](https://blog.logrocket.com/why-you-should-avoid-orms-with-examples-in-node-js-e0baab73fa5/)
