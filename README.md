@@ -166,21 +166,72 @@ Why does this thing exist? Which problems does it solve/create?
 ### Architecture 
 ### Virtual DOM
 
+
 -- Shadow DOM on drawbacks
 
 #### References
 * [Virtual DOM and Internals](https://reactjs.org/docs/faq-internals.html)
 
 ## Redux
+<p align="center">
+<img src="https://miro.medium.com/max/2532/1*zOCTZhMGZhE84_OSU7k9ig.jpeg" alt="Image of Redux Flow"  width="400"/>
+</p>
 
+### What is Redux?
+
+A state management library that holds and updates the entire state by providing it in a read-only store
+
+Pros: Properties don’t dictate structure (in relation to React)
+
+Cons: Sometimes used unnecessarily, other forms of storage do exist for caching and media delivery
+
+### Actions
+
+* An object that is returned by a pure function with no side-effects
+* It contains the "type" and updates to the state
+* Sent to the store using dispatch() and the store updates the state using the info provided in the action
+
+### Reducer
+
+* Pure function that takes the current state and action and performs a state update
+* Usually in the form of a switch statement that takes in the `action.type` and creates a new state with this action
+
+<ins>Example</ins> 
+
+### Store
+
+* Holds the entire state in a single object <ins>acting as a single source of truth</ins>
+* Assign it a vairable using `createStore(combinedReducer)`
+* Store passes two arguments to the reducer (previous state and the action) 
+
+### Thunks
+
+#### Why use Thunks?
+
+We want everything that takes a long time to occur in one central place. Having the time issues in one place makes our life easier. 
 
 
 #### References
-* [Actions and Reducers](https://rangle.github.io/react-training/redux-action-reducer/)
+* [Redux Logic Flow — Crazy Simple Summary](https://levelup.gitconnected.com/redux-logic-flow-crazy-simple-summary-35416eadabd8)
 
-
-## Express
 
 ## Node
 
+## Express
+
+#### References
+* [Build a RESTful API Using Node and Express 4](https://scotch.io/tutorials/build-a-restful-api-using-node-and-express-4)
+
+
 ## SQL
+
+
+## Sequelize (Object Relational Mapping)
+
+* [Why you should avoid ORMs (with examples in Node.js)](https://blog.logrocket.com/why-you-should-avoid-orms-with-examples-in-node-js-e0baab73fa5/)
+
+### Eager Loading vs. Lazy Loading
+
+
+## Topics for Another Day 
+* [MVC Pattern](https://en.wikipedia.org/wiki/Model%E2%80%93view%E2%80%93controller)
