@@ -19,6 +19,8 @@
   * [Architecture](#architecture)
   * [Virtual DOM](#virtual-dom)
 - [Redux](#redux)
+- [HTML](#html)
+- [CSS](#css)
 - [Express](#express)
 - [Node](#node)
 - [SQL](#sql)
@@ -108,6 +110,8 @@ TK
 
 ### Ternaries 
 
+TK
+
 #### References
 
 * [Equality comparisons and sameness](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Equality_comparisons_and_sameness)
@@ -157,6 +161,105 @@ Layman's Terms: access to an outer function’s scope from an inner function
 * [Understanding Currying in JavaScript](https://blog.bitsrc.io/understanding-currying-in-javascript-ceb2188c339)
 
 ---
+
+
+---
+
+### `eventListeners`
+
+TK 
+
+### The Different Engines 
+
+QuickSort for Chrome, but it's a bit nuanced . Chrome's v8 engine uses a combination of QuickSort and InsertionSort for arrays (length < 10). Mozilla Firefox's SpiderMonkey uses MergeSort for stability.
+
+
+#### Merge Sort 
+
+
+#### References 
+* [Merge Sort Algorithm in JavaScript](https://medium.com/javascript-in-plain-english/javascript-merge-sort-3205891ac060)
+---
+
+### General Dictionary
+
+currying
+execute
+[deobfuscate](https://www.techopedia.com/definition/24827/deobfuscate)
+instantiate 
+
+---
+# NERD Study Guide
+
+Why does this thing exist? Which problems does it solve/create? 
+
+## React
+
+### Architecture 
+
+
+
+### Virtual DOM
+
+
+-- Shadow DOM on drawbacks
+
+#### References
+* [Virtual DOM and Internals](https://reactjs.org/docs/faq-internals.html)
+
+## Redux
+<p align="center">
+<img src="https://miro.medium.com/max/2532/1*zOCTZhMGZhE84_OSU7k9ig.jpeg" alt="Image of Redux Flow"  width="400"/>
+</p>
+
+### What is Redux?
+
+A state management library that holds and updates the entire state by providing it in a read-only store
+
+Pros: Properties don’t dictate structure (in relation to React)
+
+Cons: Sometimes used unnecessarily, other forms of storage do exist for caching and media delivery
+
+### Actions
+
+* An object that is returned by a pure function with no side-effects
+* It contains the "type" and updates to the state
+* Sent to the store using dispatch() and the store updates the state using the info provided in the action
+
+### Reducer
+
+* Pure function that takes the current state and action and performs a state update
+* Usually in the form of a switch statement that takes in the `action.type` and creates a new state with this action
+
+<ins>Example</ins> 
+
+### Store
+
+* Holds the entire state in a single object <ins>acting as a single source of truth</ins>
+* Assign it a vairable using `createStore(combinedReducer)`
+* Store passes two arguments to the reducer (previous state and the action) 
+
+### Thunks
+
+#### Why use Thunks?
+
+We want everything that takes a long time to occur in one central place. Having the time issues in one place makes our life easier. 
+
+
+#### References
+* [Redux Logic Flow — Crazy Simple Summary](https://levelup.gitconnected.com/redux-logic-flow-crazy-simple-summary-35416eadabd8)
+
+## HTML
+
+## CSS 
+
+## Javascript Runtime Environments
+
+### What is Node? 
+
+* A runtime environment software that allows the ability to execute JavaScript programs directly on your operating system outside of the browser (Note: similar to how JavaScript executed in the browser has access to the DOM (e.g., `document`, `window`))
+* JS programs using `node` can perform OS-specific functionality such as read/write from files or establish network connections (e.g., `__dirname`)
+* Node's package manager (`npm`) is similar to `pip` in Python, `gem` in Ruby, `brew` in Unix, and `apt` in Linux
 
 ### Event Loop
 
@@ -217,98 +320,29 @@ f();
 #### References
 * [Garbage Collection](https://javascript.info/garbage-collection)
 
----
 
-### `eventListeners`
-
-TK 
-
-### The Different Engines 
-
-QuickSort for Chrome, but it's a bit nuanced . Chrome's v8 engine uses a combination of QuickSort and InsertionSort for arrays (length < 10). Mozilla Firefox's SpiderMonkey uses MergeSort for stability.
-
----
-
-### General Dictionary
-
-currying
-execute
-[deobfuscate](https://www.techopedia.com/definition/24827/deobfuscate)
-instantiate 
-
----
-# NERD Study Guide
-
-Why does this thing exist? Which problems does it solve/create? 
-
-## React
-
-### Architecture 
-### Virtual DOM
-
-
--- Shadow DOM on drawbacks
-
-#### References
-* [Virtual DOM and Internals](https://reactjs.org/docs/faq-internals.html)
-
-## Redux
-<p align="center">
-<img src="https://miro.medium.com/max/2532/1*zOCTZhMGZhE84_OSU7k9ig.jpeg" alt="Image of Redux Flow"  width="400"/>
-</p>
-
-### What is Redux?
-
-A state management library that holds and updates the entire state by providing it in a read-only store
-
-Pros: Properties don’t dictate structure (in relation to React)
-
-Cons: Sometimes used unnecessarily, other forms of storage do exist for caching and media delivery
-
-### Actions
-
-* An object that is returned by a pure function with no side-effects
-* It contains the "type" and updates to the state
-* Sent to the store using dispatch() and the store updates the state using the info provided in the action
-
-### Reducer
-
-* Pure function that takes the current state and action and performs a state update
-* Usually in the form of a switch statement that takes in the `action.type` and creates a new state with this action
-
-<ins>Example</ins> 
-
-### Store
-
-* Holds the entire state in a single object <ins>acting as a single source of truth</ins>
-* Assign it a vairable using `createStore(combinedReducer)`
-* Store passes two arguments to the reducer (previous state and the action) 
-
-### Thunks
-
-#### Why use Thunks?
-
-We want everything that takes a long time to occur in one central place. Having the time issues in one place makes our life easier. 
-
-
-#### References
-* [Redux Logic Flow — Crazy Simple Summary](https://levelup.gitconnected.com/redux-logic-flow-crazy-simple-summary-35416eadabd8)
-
-
-## Node
 
 ## Express
+
+### Express API
+
+### Postman
 
 #### References
 * [Express](http://expressjs.com/en/4x/api.html)
 * [Build a RESTful API Using Node and Express 4](https://scotch.io/tutorials/build-a-restful-api-using-node-and-express-4)
 
-
 ## SQL
 
-
-
 ### Basic Commands
+
+### The DBMS
+
+The Database Management System is responsible for translating declarative queries into concrete file system operations
+
+### `psql` client
+
+### `pg` client
 
 ### Differences between Postgres and MySQL
 
@@ -326,6 +360,9 @@ We want everything that takes a long time to occur in one central place. Having 
 
 ### Eager Loading vs. Lazy Loading
 
+## Webpack
+
+## Babel
 
 ## Topics for Another Day 
 * [MVC Pattern](https://en.wikipedia.org/wiki/Model%E2%80%93view%E2%80%93controller)
