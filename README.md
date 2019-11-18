@@ -389,8 +389,7 @@ The asynchronous, single-threaded nature is not built into the JS language, but 
 * **Call Stack** - a representation of the single thread provided for JS code execution 
 * **Browser or Web API's** - these components are built into the web browser (or the computer environment) to provide extra functionality on top of JS (Note: the point of the API's is to abstract away the complexity involved and provide the extra capabilities)
 
-
-[![What the heck is the event loop anyway?]("https://raw.githubusercontent.com/djchinia/javascript-study-guide/async-await/media/eventLoop.png")](https://youtu.be/8aGhZQkoFbQ?t=790)
+[![What the heck is the event loop anyway? video](https://raw.githubusercontent.com/djchinia/javascript-study-guide/async-await/media/eventLoop.png)](https://youtu.be/8aGhZQkoFbQ?t=790)
 
 #### Blocking
 
@@ -423,9 +422,6 @@ async function f() {
 
 f();
 ```
-
-
-
 
 #### References
 * [Ryan Dahl: Original Node.js presentation](https://www.youtube.com/watch?v=ztspvPYybIY)
