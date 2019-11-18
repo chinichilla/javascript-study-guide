@@ -29,6 +29,26 @@
 
 # JavaScript Study Guide
 ## The Basics
+
+### Loops and Debugging
+* Loops 
+  - `while` - loop with (1) `while` keyword, (2) conditional expression that evaluates to a boolean, (3) a code block that eventually makes a base condition to exit the loop
+  - `for` - loop with (1) `for` keyword, (2) three optional expressions, (3) a code block
+ 
+ ``` javascript
+ // for (initialization; condition; update){
+ //  code block
+ // }
+ 
+ // example -- the expressions can do much more than this
+ for (let i=0; i < 5; i++){
+  console.log('hi')
+ }
+ ```
+ 
+ 
+  - 
+
 ### Features of ES6
 
 ECMAScript is the Javacript's language standard (e.g.,ES6 (ES2015), ES2019)
@@ -95,6 +115,10 @@ TK
 TK
 
 #### Wrapper Objects
+
+#### Useful Array Functions
+
+.split(''), toUpperCase(), toLowerCase(), join('')
 
 #### References
 
