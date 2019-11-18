@@ -390,7 +390,7 @@ The asynchronous, single-threaded nature is not built into the JS language, but 
 * **Browser or Web API's** - these components are built into the web browser (or the computer environment) to provide extra functionality on top of JS (Note: the point of the API's is to abstract away the complexity involved and provide the extra capabilities)
 
 
-[![What the heck is the event loop anyway?]("https://github.com/djchinia/javascript-study-guide/blob/master/media/eventLoop.png")](https://youtu.be/8aGhZQkoFbQ?t=790)
+[![What the heck is the event loop anyway?]("https://raw.githubusercontent.com/djchinia/javascript-study-guide/async-await/media/eventLoop.png")](https://youtu.be/8aGhZQkoFbQ?t=790)
 
 #### Blocking
 
