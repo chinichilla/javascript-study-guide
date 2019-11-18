@@ -116,19 +116,19 @@ TK
 
 * [Equality comparisons and sameness](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Equality_comparisons_and_sameness)
 
-### Context and Scope
+### Scope
 
-#### Context
+JavaScript is lexically scoped
+
+#### What is *Lexical Scope*?
+* Lexical Scope means the location where a variable is declared determines its scope (see [Variable Declaration](#variable-declaration))
+
+#### What is *Global Scope*?
+* Global Scope is when a variable declaration is made outside of a function and can be referenced throughout a file
 
 Scope - determines the accessibility of identifiers (e.g., variables) based off where it was created
 
 Note: `window` is the global object in the browser 
-
-TK
-
-#### Scope
-
-TK
 
 #### `this` keyword and context
 
