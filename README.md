@@ -144,19 +144,27 @@ for (let i=0; i < 5; i++){
 * [Control Flow MDN Page](https://developer.mozilla.org/en-US/docs/Glossary/Control_flow)
 * [JavaScript type coercion explained](https://www.freecodecamp.org/news/js-type-coercion-explained-27ba3d9a2839/)
 
-### Context and Scope
+### Scope
 
-#### Context
+JavaScript is lexically scoped
+
+#### What is *Lexical Scope*?
+* Lexical Scope means the location where a variable is declared determines its scope (see [Variable Declaration](#variable-declaration))
+
+#### What is *Global Scope*?
+* Global Scope is when a variable declaration is made outside of a function and can be referenced throughout a file
 
 Scope - determines the accessibility of identifiers (e.g., variables) based off where it was created
 
 Note: `window` is the global object in the browser 
 
-TK
+#### `this` keyword and context
 
-#### Scope
 
-TK
+#### References
+* [Eyeballing-this.md](https://gist.github.com/zcaceres/2a4ac91f9f42ec0ef9cd0d18e4e71262)
+* []()
+
 
 #### `this` keyword and context
 
@@ -267,9 +275,6 @@ Layman's Terms: access to an outer function’s scope from an inner function
 * [The many faces of `this` in javascript](https://blog.pragmatists.com/the-many-faces-of-this-in-javascript-5f8be40df52e)
 * [What is JavaScript Interview: What is Closure?](https://medium.com/javascript-scene/master-the-javascript-interview-what-is-a-closure-b2f0d2152b36)
 * [Understanding Currying in JavaScript](https://blog.bitsrc.io/understanding-currying-in-javascript-ceb2188c339)
-
----
-
 
 ---
 
