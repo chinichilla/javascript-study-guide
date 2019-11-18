@@ -43,7 +43,7 @@
   - Note 1: Do <ins>NOT</ins> confuse the primitive itself to the variable assigned to the primitive value.
   - Note 2: commonly referred to as "assign by copy" or "assign by value-copy"
  
-#### `typeof`
+#### `typeof` keyword
 
 TK
  
@@ -145,8 +145,10 @@ for (let i=0; i < 5; i++){
 * [JavaScript type coercion explained](https://www.freecodecamp.org/news/js-type-coercion-explained-27ba3d9a2839/)
 
 ### Scope
+#### What is *Scope*?
+Scope determines the accessibility of identifiers (e.g., variables) based off where it was created.
 
-JavaScript is lexically scoped
+Note: JavaScript is lexically scoped
 
 #### What is *Lexical Scope*?
 * Lexical Scope means the location where a variable is declared determines its scope (see [Variable Declaration](#variable-declaration))
@@ -154,24 +156,17 @@ JavaScript is lexically scoped
 #### What is *Global Scope*?
 * Global Scope is when a variable declaration is made outside of a function and can be referenced throughout a file
 
-Scope - determines the accessibility of identifiers (e.g., variables) based off where it was created
-
 Note: `window` is the global object in the browser 
 
-#### `this` keyword and context
+#### What is *Functional Scope*?
 
+* Variable declarations inside of functions are 'locally scoped'
 
-#### References
-* [Eyeballing-this.md](https://gist.github.com/zcaceres/2a4ac91f9f42ec0ef9cd0d18e4e71262)
-* []()
+#### What if a variable is defined locally and globally? 
 
+* **Variable Shadowing**: 
 
-#### `this` keyword and context
-
-
-#### References
-* [Eyeballing-this.md](https://gist.github.com/zcaceres/2a4ac91f9f42ec0ef9cd0d18e4e71262)
-* []()
+TK - https://en.wikipedia.org/wiki/Variable_shadowing
 
 ### Features of ES6
 
@@ -221,6 +216,11 @@ TK
 ---
 ### Misc - Put Somewhere
 
+#### Advanced Use of Context: `this` keyword
+#### References
+* [Eyeballing-this.md](https://gist.github.com/zcaceres/2a4ac91f9f42ec0ef9cd0d18e4e71262)
+* []()
+
 #### What is the difference between a parameter and an argument? 
 * **parameter** - the placeholder listed for potential variables when defining a function
 * **argument** - the actual value passed to the function when that function is invoked
@@ -230,6 +230,9 @@ TK
 TK
 
 #### Wrapper Objects
+
+#### Useful String Functions
+[.indexOf()](https://www.w3schools.com/jsref/jsref_indexof.asp)
 
 #### Useful Array Functions
 
@@ -383,9 +386,19 @@ The asynchronous, single-threaded nature is not built into the JS language, but 
 </p>
 
 * **Heap** - a large mostly unstructured region of memory where objects are allocated
-* **Stack** - a representation of the single thread provided for JS code execution 
+* **Call Stack** - a representation of the single thread provided for JS code execution 
 * **Browser or Web API's** - these components are built into the web browser (or the computer environment) to provide extra functionality on top of JS (Note: the point of the API's is to abstract away the complexity involved and provide the extra capabilities)
 
+
+[![What the heck is the event loop anyway?](https://i.ytimg.com/vi/8aGhZQkoFbQ/maxresdefault.jpg)](https://youtu.be/8aGhZQkoFbQ?t=790)
+
+#### Blocking
+
+Things that are slow and on that stack (TK). 
+
+#### Concurrency & the Event Loop 
+
+The browser is more than the runtime and similarly in node (there's extra things in C) (TK)
 
 #### Promises vs. Async/Await
 
@@ -422,6 +435,7 @@ f();
 * [Event Loop Explained](https://medium.com/front-end-weekly/javascript-event-loop-explained-4cd26af121d4)
 * [Asynchronous JavaScript: From Callback Hell to Async and Await](https://blog.hellojs.org/asynchronous-javascript-from-callback-hell-to-async-and-await-9b9ceb63c8e8)
 * [Understanding JS: The Event Loop](https://hackernoon.com/understanding-js-the-event-loop-959beae3ac40)
+* [Art of Node](https://github.com/maxogden/art-of-node#streams)
 
 
 ---
@@ -475,6 +489,14 @@ The Database Management System is responsible for translating declarative querie
 ### Eager Loading vs. Lazy Loading
 
 ## Webpack
+<p align="center">
+<img src="https://miro.medium.com/max/2292/1*3JthPwVK_yFrZ4ACi0LZyw.png" alt="Image of Webpack"  url="https://medium.com/ag-grid/webpack-tutorial-understanding-how-it-works-f73dfa164f01" width="400"/>
+</p>
+
+"Webpack is a module bundler. It takes disparate dependencies, creates modules for them and bundles the entire network up into manageable output files. This is especially useful for Single Page Applications (SPAs)."
+
+#### Referenes
+* [Webpack Tutorial: Understanding How It Works](https://medium.com/ag-grid/webpack-tutorial-understanding-how-it-works-f73dfa164f01)
 
 ## Babel
 
@@ -482,3 +504,4 @@ The Database Management System is responsible for translating declarative querie
 * [MVC Pattern](https://en.wikipedia.org/wiki/Model%E2%80%93view%E2%80%93controller)
 * [Test-Driven Development](https://www.youtube.com/watch?v=6pYUzEduLyU)
 * Debugging + Chrome Console
+* [WebAssembly](https://hacks.mozilla.org/2017/02/a-cartoon-intro-to-webassembly/)
