@@ -496,6 +496,37 @@ The Database Management System is responsible for translating declarative querie
 
 ## Babel
 
+### What is Babel? 
+* a toolchain used to convert ES2015+ code into a backwards compatible version of JS in current and older browsers and environments
+
+### What can Babel do?
+* Transform syntax
+* Polyfill features that are missing in the original environment 
+* Source code transformations (i.e., codemods)
+* [Other Features](https://babeljs.io/videos.html)
+
+### [Example of Babel Transpiling](https://babeljs.io/docs/en/index.html)
+```javascript
+// Babel Input: ES2015 arrow function
+[1, 2, 3].map((n) => n + 1);
+
+// Babel Output: ES5 equivalent
+[1, 2, 3].map(function(n) {
+  return n + 1;
+});
+```
+
+### [Benefits of Babel in ES6](https://coherent-labs.com/posts/es6-standard-with-babel-js/)
+1. Block scoped variables - see `let` keyword
+2. Classes - TK 
+3. Promises - TK
+4. Modules - can now import/export multiple named values
+
+#### Reference 
+* [What is Babel?](https://babeljs.io/docs/en/index.html)
+* [Videos about Babel](https://babeljs.io/videos.html)
+* [How to use ES6 standard with Babel.js](https://coherent-labs.com/posts/es6-standard-with-babel-js/)
+
 ## Topics for Another Day 
 * [MVC Pattern](https://en.wikipedia.org/wiki/Model%E2%80%93view%E2%80%93controller)
 * [Test-Driven Development](https://www.youtube.com/watch?v=6pYUzEduLyU)
