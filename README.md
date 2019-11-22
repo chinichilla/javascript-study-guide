@@ -109,6 +109,70 @@ console.log(frequencyCounter(exampleString))
 * It's the order in which the computer executes statements in a script. 
 * Code is run in order from the first line in the file to the last line unless a computer comes across structures that can change control flow, such as conditionals and loops
 
+### Conditionals
+
+#### Conditional Statements in JS
+* `if`: directs to block of code below if `true`
+* `else`: directs to block of code below if `false`
+* `else if`: directs to block of code below if `true` and above conditional statements are `false`
+* `switch`: matches the expression's value to a case `clause` and executes statements associated with the case 
+
+```javascript
+if (condition1) {
+  //  block of code to be executed if condition1 is true
+} else if (condition2) {
+  //  block of code to be executed if the condition1 is false and condition2 is true
+} else {
+  //  block of code to be executed if the condition1 is false and condition2 is false
+}
+```
+
+```javascript
+switch (expression) {
+  case value1:
+    //Statements executed when the
+    //result of expression matches value1
+    [break;]
+  case value2:
+    //Statements executed when the
+    //result of expression matches value2
+    [break;]
+  ...
+  case valueN:
+    //Statements executed when the
+    //result of expression matches valueN
+    [break;]
+  [default:
+    //Statements executed when none of
+    //the values match the value of the expression
+    [break;]]
+}
+```
+
+#### Ternaries
+* shortcut for the `if` statement
+* for `false` statements, the condition could be expressions: `null`, `NaN`, `0`, the empty string (`""`), and `undefined`
+```javascript
+// syntax example 1
+condition ? exprIfTrue : exprIfFalse
+
+// syntac example 2
+function example(…) {
+    return condition1 ? value1
+         : condition2 ? value2
+         : condition3 ? value3
+         : value4;
+}
+
+// equivalent to:
+function example(…) {
+    if (condition1) { return value1; }
+    else if (condition2) { return value2; }
+    else if (condition3) { return value3; }
+    else { return value4; }
+}
+```
+
 ### Loops
 * `while`: loop with (1) `while` keyword, (2) conditional expression that evaluates to a boolean, (3) a code block that eventually makes a base condition to exit the loop
 ```javascript
@@ -141,8 +205,11 @@ for (let i=0; i < 5; i++){
 * `break`: jumps out of the loop
   
 #### References
-* [Control Flow MDN Page](https://developer.mozilla.org/en-US/docs/Glossary/Control_flow)
 * [JavaScript type coercion explained](https://www.freecodecamp.org/news/js-type-coercion-explained-27ba3d9a2839/)
+* [Control Flow MDN Page](https://developer.mozilla.org/en-US/docs/Glossary/Control_flow)
+* [JavaScript Switch Statement](https://www.w3schools.com/js/js_switch.asp)
+* [switch MDN Page](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/switch)
+* [Conditional (ternary) operator](https://developer.mozilla.org/en US/docs/Web/JavaScript/Reference/Operators/Conditional_Operator)
 
 ### Scope
 #### What is *Scope*?
@@ -247,11 +314,6 @@ https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects
 * [Javascipt - Null vs. Undefined](https://codeburst.io/javascript-null-vs-undefined-20f955215a2)
 * [Explaining Value vs. Reference in Javascript](https://codeburst.io/explaining-value-vs-reference-in-javascript-647a975e12a0)
 * [Parameters & Arguments in JavaScript](https://codeburst.io/parameters-arguments-in-javascript-eb1d8bd0ef04)
-
-
-### Ternaries 
-
-TK
 
 #### References
 
@@ -444,8 +506,6 @@ f();
 #### References
 * [Garbage Collection](https://javascript.info/garbage-collection)
 
-
-
 ## Express
 
 ### Express API
@@ -473,7 +533,6 @@ The Database Management System is responsible for translating declarative querie
 ### Useful Practice
 * [PostgreSQL Exercises](https://pgexercises.com/)
 * [PostgreSQL Tutorial](http://www.postgresqltutorial.com/)
-
 
 #### References
 * [PostgreSQL vs MySQL: What's the Difference?](https://www.guru99.com/postgresql-vs-mysql-difference.html)
