@@ -42,11 +42,37 @@
 * Primitives are **immutable** and can only be reassigned a new value.
   - Note 1: Do <ins>NOT</ins> confuse the primitive itself to the variable assigned to the primitive value.
   - Note 2: commonly referred to as "assign by copy" or "assign by value-copy"
- 
+
+#### What is the difference between null and undefined?
+
+##### What is `null`?
+Two features to understand:
+* `null` is an empty or non-existent value
+* `null` must be assigned
+
+```javascript
+let a = null
+console.log(a) // null
+```
+
+#### What is `undefined`?
+* `undefined` usually means a variable has been declared, but not defined
+
+```javascript
+let b
+console.log(b) // undefined
+```
+
 #### `typeof` keyword
 
-TK
- 
+
+``` javascript
+let a = null
+let b
+console.log(typeof a) // object
+console.log(typeof b) // undefined 
+```
+
 ### Type Coercion 
 
 #### Explicit Coercion
@@ -143,6 +169,7 @@ for (let i=0; i < 5; i++){
 #### References
 * [Control Flow MDN Page](https://developer.mozilla.org/en-US/docs/Glossary/Control_flow)
 * [JavaScript type coercion explained](https://www.freecodecamp.org/news/js-type-coercion-explained-27ba3d9a2839/)
+* [JavaScript — Null vs. Undefined](https://codeburst.io/javascript-null-vs-undefined-20f955215a2)
 
 ### Scope
 #### What is *Scope*?
@@ -224,10 +251,6 @@ TK
 #### What is the difference between a parameter and an argument? 
 * **parameter** - the placeholder listed for potential variables when defining a function
 * **argument** - the actual value passed to the function when that function is invoked
-
-#### What is the difference between null and undefined?
-
-TK
 
 #### Wrapper Objects
 
