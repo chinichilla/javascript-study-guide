@@ -43,6 +43,16 @@
   - Note 1: Do <ins>NOT</ins> confuse the primitive itself to the variable assigned to the primitive value.
   - Note 2: commonly referred to as "assign by copy" or "assign by value-copy"
 
+#### String Methods
+
+* `.join()`
+* `.split('')`
+* `toUpperCase()`
+* `toLowerCase()`
+* `join('')`
+
+* [.indexOf()](https://www.w3schools.com/jsref/jsref_indexof.asp)
+
 #### What is the difference between null and undefined?
 
 ##### What is `null`?
@@ -107,7 +117,56 @@ console.log('1' == true) // true
 * `!!`: Putting double bang in front of something will give you its truthiness
 * **Other Logical Operators** (e.g., `&&`, `||`)
 
-### Arrays and Objects
+### Objects
+
+#### How many types of objects are there?
+
+TK
+
+#### Arrays
+
+##### What is an Array? 
+
+* list-like data structure in Javascript
+
+##### Properties
+* `.indexOf`
+* `.length` - returns property for the number of elements
+
+##### Methods (TK - go  back and state which ones are immutable and mutable)
+* `.push()` method - adds to the end of an array
+* `.pop()` method - removes and returns the the most recent element popped off
+* `.shift`
+* `.slice`
+* `.reverse`
+
+* `.splice(index, count [optional], inputElements [optional])` - mutates the original array by adding or removing elemnts from the middle of an array (rather than from either end) and returns the original array with those elements removed  
+* `concat`
+
+TK TK TK - find place
+
+
+##### Mutators
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array
+
+##### Nested Arrays 
+
+#### Wrapper Objects
+
+
+#### References
+
+* [Primitive MDN Page](https://developer.mozilla.org/en-US/docs/Glossary/Primitive)
+* [Javascipt - Null vs. Undefined](https://codeburst.io/javascript-null-vs-undefined-20f955215a2)
+* [Explaining Value vs. Reference in Javascript](https://codeburst.io/explaining-value-vs-reference-in-javascript-647a975e12a0)
+* [Parameters & Arguments in JavaScript](https://codeburst.io/parameters-arguments-in-javascript-eb1d8bd0ef04)
+
+#### References
+
+* [Equality comparisons and sameness](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Equality_comparisons_and_sameness)
+
+TK TK TK - find place end
+
 
 ```javascipt
 exampleString = 'abaacdade'
@@ -262,6 +321,13 @@ Note: `window` is the global object in the browser
 
 TK - https://en.wikipedia.org/wiki/Variable_shadowing
 
+#### What is *Block Scope*?
+
+* any block of code (code inside curly braces) has its own scope
+Note: must use `let` rather than `var` to maintain block scope
+
+TK
+
 ### Features of ES6
 
 ECMAScript is the Javacript's language standard (e.g.,ES6 (ES2015), ES2019)
@@ -318,29 +384,6 @@ TK
 #### What is the difference between a parameter and an argument? 
 * **parameter** - the placeholder listed for potential variables when defining a function
 * **argument** - the actual value passed to the function when that function is invoked
-
-#### Wrapper Objects
-
-#### Useful String Functions
-[.indexOf()](https://www.w3schools.com/jsref/jsref_indexof.asp)
-
-#### Useful Array Functions
-
-.split(''), toUpperCase(), toLowerCase(), join('')
-
-#### Mutators
-https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array
-
-#### References
-
-* [Primitive MDN Page](https://developer.mozilla.org/en-US/docs/Glossary/Primitive)
-* [Javascipt - Null vs. Undefined](https://codeburst.io/javascript-null-vs-undefined-20f955215a2)
-* [Explaining Value vs. Reference in Javascript](https://codeburst.io/explaining-value-vs-reference-in-javascript-647a975e12a0)
-* [Parameters & Arguments in JavaScript](https://codeburst.io/parameters-arguments-in-javascript-eb1d8bd0ef04)
-
-#### References
-
-* [Equality comparisons and sameness](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Equality_comparisons_and_sameness)
 
 #### Closure
 
