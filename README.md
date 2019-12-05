@@ -27,14 +27,15 @@
 ****
 
 # JavaScript Study Guide
-## The Basics
 
-### Variable Declaration
+## Variable Declaration
  * `var`: Before ES6, it was the only variable. Scoped to global scope (everything can access it) or function scoped (only accessible within the function)
  * `let`: declares a new variable that be reassigned later on (note: possible with `var`)
  * `const`: declares new variable that cannot be reassigned (note: reassigning will throw an 'Uncaught TypeError'); default variable unless reassignment is necessary
  
-### Data Types
+## Data Types
+
+### Primitive Data Types
 
 #### What are primitive data types?
 * A primitive is a data that is not an object and has no methods. 
@@ -65,7 +66,7 @@ let a = null
 console.log(a) // null
 ```
 
-#### What is `undefined`?
+##### What is `undefined`?
 * `undefined` usually means a variable has been declared, but not defined
 
 ```javascript
@@ -75,6 +76,7 @@ console.log(b) // undefined
 
 #### `typeof` keyword
 
+TK
 
 ``` javascript
 let a = null
@@ -107,6 +109,12 @@ console.log('1' == true) // true
 * Loose equality: Compare two values for equality after converting both values to a common type. 
 * Strict equality: Comparing two values for equality, neither value is implicitly converted to some other value before being compared. 
 
+
+#### References
+
+* [Equality comparisons and sameness](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Equality_comparisons_and_sameness)
+
+
 #### Truthiness and Falsiness 
 
 * **always falsy**: `false`, `0`, `''` or `""` (empty string), `null`, `undefined`, `NaN`
@@ -117,23 +125,22 @@ console.log('1' == true) // true
 * `!!`: Putting double bang in front of something will give you its truthiness
 * **Other Logical Operators** (e.g., `&&`, `||`)
 
-### Objects
 
 #### How many types of objects are there?
 
 TK
 
-#### Arrays
+### Arrays
 
-##### What is an Array? 
+#### What is an Array? 
 
 * list-like data structure in Javascript
 
-##### Properties
+#### Properties
 * `.indexOf`
 * `.length` - returns property for the number of elements
 
-##### Methods (TK - go  back and state which ones are immutable and mutable)
+#### Methods (TK - go  back and state which ones are immutable and mutable)
 * `.push()` method - adds to the end of an array
 * `.pop()` method - removes and returns the the most recent element popped off
 * `.shift`
@@ -145,14 +152,12 @@ TK
 
 TK TK TK - find place
 
-
-##### Mutators
+#### Mutators
 https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array
 
-##### Nested Arrays 
+#### Nested Arrays 
 
-#### Wrapper Objects
-
+TK
 
 #### References
 
@@ -160,10 +165,6 @@ https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects
 * [Javascipt - Null vs. Undefined](https://codeburst.io/javascript-null-vs-undefined-20f955215a2)
 * [Explaining Value vs. Reference in Javascript](https://codeburst.io/explaining-value-vs-reference-in-javascript-647a975e12a0)
 * [Parameters & Arguments in JavaScript](https://codeburst.io/parameters-arguments-in-javascript-eb1d8bd0ef04)
-
-#### References
-
-* [Equality comparisons and sameness](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Equality_comparisons_and_sameness)
 
 TK TK TK - find place end
 
@@ -187,9 +188,22 @@ const frequencyCounter = (string) => {
 console.log(frequencyCounter(exampleString))
 ```
 
-### Control Flow in Javascript
+### Objects
 
-#### What is control flow? 
+* an object is a collection of key-value pairs
+
+#### Bracket vs. Dot Notation
+
+* bracket notation needs quotes to access key unless you are intentionally accessing the variable that contains the key name
+
+### for... in loop
+
+#### Wrapper Objects
+
+
+## Control Flow in Javascript
+
+### What is control flow? 
 
 * It's the order in which the computer executes statements in a script. 
 * Code is run in order from the first line in the file to the last line unless a computer comes across structures that can change control flow, such as conditionals and loops
@@ -328,13 +342,13 @@ Note: must use `let` rather than `var` to maintain block scope
 
 TK
 
-### Features of ES6
+## Features of ES6
 
 ECMAScript is the Javacript's language standard (e.g.,ES6 (ES2015), ES2019)
 
-#### Variable Declaration (see above)
+### Variable Declaration (see above)
  
-#### Template Literals
+### Template Literals
 Template literals can be used to avoid concatenating strings or expressions.
 
 ```javascript
@@ -348,7 +362,7 @@ function combiningGroups(groupsize1, groupsize2){
 }
 ```
 
-#### Arrow Functions
+### Arrow Functions
 A slightly different way of declaring a function that is shorter syntactically and binds `this` to its enclosing execution context.
 
 
@@ -364,7 +378,7 @@ function milesToWalk(miles){
 }
 ```
 
-#### Symbol Primitive
+### Symbol Primitive
 
 TK
 
