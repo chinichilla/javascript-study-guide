@@ -52,7 +52,7 @@
 * `toLowerCase()`
 * `join('')`
 
-* [.indexOf()](https://www.w3schools.com/jsref/jsref_indexof.asp)
+* [`.indexOf()`](https://www.w3schools.com/jsref/jsref_indexof.asp)
 
 #### What is the difference between null and undefined?
 
@@ -74,9 +74,10 @@ let b
 console.log(b) // undefined
 ```
 
-#### `typeof` keyword
+### Type Coercion 
 
-TK
+#### `typeof` keyword
+* returns a string indicating the type of the unevaluated operand
 
 ``` javascript
 let a = null
@@ -85,16 +86,12 @@ console.log(typeof a) // object
 console.log(typeof b) // undefined 
 ```
 
-### Type Coercion 
-
 #### Explicit Coercion
-
-TK
+* type conversion done in code using the inbuilt functions (e.g., `Number()`, `String()`, `Boolean()`)
 
 #### Implicit Coercion
-
 * Surrounding Context
-  -Since JS si a weakly-typed languages, values can be converted between different types automatically. 
+  -Since JS is a weakly-typed languages, values can be converted between different types automatically
   - Occurs usually when operators are applied to different types (e.g.,)
 * `==`: 
 ```javascript
@@ -109,9 +106,12 @@ console.log('1' == true) // true
 * Loose equality: Compare two values for equality after converting both values to a common type. 
 * Strict equality: Comparing two values for equality, neither value is implicitly converted to some other value before being compared. 
 
+<p align="center">
+<img src="https://miro.medium.com/max/1640/1*VrBiLu3xeENMMfr6NPcHGw.png" alt="== Operator Chart Reference — StackOverflow"  width="400"/>
+</p>
 
 #### References
-
+* [Javascript Coercion Explained](https://hackernoon.com/javascript-coercion-explained-545c895213d3)
 * [Equality comparisons and sameness](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Equality_comparisons_and_sameness)
 
 
@@ -151,6 +151,14 @@ TK
 * `concat`
 
 TK TK TK - find place
+
+#### Functional Programming
+* `.map`
+* `.filter`
+* `.reduce`
+* `.forEach`
+ 
+TK 
 
 #### Mutators
 https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array
@@ -200,6 +208,38 @@ console.log(frequencyCounter(exampleString))
 
 #### Wrapper Objects
 
+#### Object Methods
+Enumerability and ownership of properties
+
+TK 
+
+* `.getOwnPropertyNames()` - method that returns an array of all properites (including non-enumerable properties except for those which use Symbol) found directly in a given object
+* `.prototype.hasOwnProperty()` - method returns a boolean indicating whether the object has the specified property as its own property (as opposed to inheriting it)
+* `.assign()` - method copies all enumerable own properties from one or more source objects to a target object. It returns the target object
+* `.keys()` - method returns an array of a given object's own enumerable property names, in the same order as we get with a normal loop
+* `.values()` - method returns an array of a given object's own enumerable property values, in the same order as that provided by a for...in loop (the difference being that a for-in loop enumerates properties in the prototype chain as well)
+
+
+#### Creating New Objects
+
+* [Object.create() MDN Page](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/create)
+
+
+#### Object Patterns
+##### Object Constructors
+
+```js
+function Person(first, last, age, eye) {
+  this.firstName = first;
+  this.lastName = last;
+  this.age = age;
+  this.eyeColor = eye;
+}
+```
+
+* `constructor()` - method
+
+##### Object Factory Functions
 
 ## Control Flow in Javascript
 
@@ -391,13 +431,34 @@ TK
 ### Misc - Put Somewhere
 
 #### Advanced Use of Context: `this` keyword
+
+- `.call` or `.apply`
+- call-site of the function
+
+TK
+
 #### References
 * [Eyeballing-this.md](https://gist.github.com/zcaceres/2a4ac91f9f42ec0ef9cd0d18e4e71262)
 * []()
 
+
 #### What is the difference between a parameter and an argument? 
 * **parameter** - the placeholder listed for potential variables when defining a function
 * **argument** - the actual value passed to the function when that function is invoked
+
+#### Rest Parameter 
+* syntax that allows us ot represent an indefinite number of arguments as an array
+
+```js
+function sum(...theArgs) {
+ return theArgs.reduce((previous, current) => {
+  return previous + current;
+});
+  
+console.log(sum(1, 2, 3, 4)); // expected output: 10
+
+```
+
 
 #### Closure
 
